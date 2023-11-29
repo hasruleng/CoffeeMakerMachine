@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "IvC9mJ6gDmigLBlpiQlSr2jEaZ+J4nKgpy1eAIIdR9L4lZk2mFyE+uSEYZypazdQsZsDam085hVj5h4dunTdIA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\20235689\\OneDrive\\Kodingan\\CoffeeMachineAssignment\\CoffeeDrinksBuilderApp\\API\\CoffeeDrinksBuilderApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\20235689\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\20235689\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\20235689\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\20235689\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}

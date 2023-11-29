@@ -1,0 +1,14 @@
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\bin\Debug\net6.0\CoffeeDrinksBuilderApp.exe
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\bin\Debug\net6.0\CoffeeDrinksBuilderApp.deps.json
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\bin\Debug\net6.0\CoffeeDrinksBuilderApp.runtimeconfig.json
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\bin\Debug\net6.0\CoffeeDrinksBuilderApp.dll
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\bin\Debug\net6.0\CoffeeDrinksBuilderApp.pdb
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\CoffeeDrinksBuilderApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\CoffeeDrinksBuilderApp.AssemblyInfoInputs.cache
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\CoffeeDrinksBuilderApp.AssemblyInfo.cs
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\CoffeeDrinksBuilderApp.csproj.CoreCompileInputs.cache
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\CoffeeDrinksBuilderApp.dll
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\refint\CoffeeDrinksBuilderApp.dll
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\CoffeeDrinksBuilderApp.pdb
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\CoffeeDrinksBuilderApp.genruntimeconfig.cache
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\ref\CoffeeDrinksBuilderApp.dll
