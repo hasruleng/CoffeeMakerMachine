@@ -12,3 +12,4 @@ C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderA
 C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\CoffeeDrinksBuilderApp.pdb
 C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\CoffeeDrinksBuilderApp.genruntimeconfig.cache
 C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\ref\CoffeeDrinksBuilderApp.dll
+C:\Users\20235689\OneDrive\Kodingan\CoffeeMachineAssignment\CoffeeDrinksBuilderApp\API\obj\Debug\net6.0\CoffeeDrinksBuilderApp.sourcelink.json

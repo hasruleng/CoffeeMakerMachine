@@ -11,16 +11,14 @@ namespace CoffeeDrinksBuilderApp.Builders
     public interface IDrinkBuilder
     {
         void Reset();
-        void AddIngredient(string name, int quantity);
-        void SetDesiredStrength(string ingredientName, int desiredStrength);
-        // Other methods for configuring drink properties
-        Drink GetDrink();
+        void SetDrink(Drink drink);
+        void MakeDrink();
     }
 
     public class DrinkBuilder : IDrinkBuilder
     {
         private Drink drink;
-
+        
         public DrinkBuilder()
         {
             Reset();
@@ -35,6 +33,10 @@ namespace CoffeeDrinksBuilderApp.Builders
         public void SetDrinkName(string name)
         {
             drink.Name = name;
+        }
+
+        public void SetDrink(Drink drink){
+            this.drink = drink;
         }
 
         public void AddIngredient(string name, int quantity)
@@ -52,6 +54,15 @@ namespace CoffeeDrinksBuilderApp.Builders
         public Drink GetDrink()
         {
             return drink;
+        }
+
+        public void MakeDrink()
+        {
+            foreach (IngredientConfig ingredient in drink.Ingredients)
+            {
+                Console.WriteLine($"Filling the cup with: {ingredient.Name}, Quantity: {ingredient.Quantity}, HotWaterVolume: {ingredient.HotWaterVolume}, HotWaterTemp: {ingredient.HotWaterTemp}");
+            }
+            Console.WriteLine("Please take your cup of "+drink.Name+". Thank you.");
         }
     }
 }
