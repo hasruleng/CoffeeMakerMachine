@@ -1,7 +1,7 @@
 ﻿using System;
 using CoffeeDrinksBuilderApp.Builders;
 using System.Text.Json;
-using CoffeeDrinksBuilderApp.Models;
+using Domain;
 using System.Runtime.InteropServices;
 using System.Reflection;
 
@@ -13,10 +13,10 @@ namespace CoffeeMachineApp
         {
             string configFilePath = "Configuration/drink_options.json";
             // string jsonString = File.ReadAllText(configFilePath);
-            // var config = JsonSerializer.Deserialize<DrinkConfig>(jsonString);
+            // var config = JsonSerializer.Deserialize<DrinksRepository>(jsonString);
 
             IDrinkOptionsLoader loader = new ConfigFile_DrinkOptionsLoader();
-            DrinkConfig drinksConfig = loader.LoadFrom(configFilePath);
+            DrinksRepository drinksConfig = loader.LoadFrom(configFilePath);
 
             //1: SELECTING THE DRINK
             string? selection = null;
@@ -32,7 +32,7 @@ namespace CoffeeMachineApp
                 // Environment.Exit(0);
             }
 
-            Drink selectedDrink = drinksConfig.Drinks.FirstOrDefault(drink => drink.Name == selection);
+            Drink selectedDrink = drinksConfig.GetDrinkByName(selection);
             List<IngredientConfig> adjustableIngredients = new List<IngredientConfig>();
             if (selectedDrink != null)
             {
