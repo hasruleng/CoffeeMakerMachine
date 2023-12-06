@@ -1,9 +1,6 @@
-﻿using System;
-using CoffeeDrinksBuilderApp.Builders;
-using System.Text.Json;
+﻿using Application;
 using Domain;
-using System.Runtime.InteropServices;
-using System.Reflection;
+using Persistence;
 
 namespace CoffeeMachineApp
 {
@@ -79,10 +76,10 @@ namespace CoffeeMachineApp
             }
 
             //3: BUILD (MAKE) THE DRINK HERE
-            IDrinkBuilder drinkBuilder = new DrinkBuilder();
+            // IDrinkBuilder drinkBuilder = new DrinkBuilder();
 
-            drinkBuilder.SetDrink(selectedDrink);
-            drinkBuilder.MakeDrink();
+            // drinkBuilder.SetDrink(selectedDrink);
+            // drinkBuilder.MakeDrink();
 
         }
     }

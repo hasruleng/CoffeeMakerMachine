@@ -31,7 +31,23 @@ namespace Domain
         public Drink GetDrinkByName(string drinkName)
         {
             var drinks = _configuration.GetSection("Drinks").Get<List<Drink>>();
-            return drinks.Find(drink => drink.Name == drinkName);
+            var selectedDrink = drinks.Find(drink => drink.Name == drinkName);
+            // List<IngredientConfig> adjustableIngredients = new List<IngredientConfig>();
+            if (selectedDrink != null)
+            {
+            //     // Console.WriteLine($"Found drink: {selectedDrink.Name}");
+                foreach (IngredientConfig ingredient in selectedDrink.Ingredients)
+                {
+            //         Console.WriteLine($"- Ingredient: {ingredient.Name}, Quantity: {ingredient.Quantity}, HotWaterVolume: {ingredient.HotWaterVolume}, HotWaterTemp: {ingredient.HotWaterTemp}");
+            //      check if any of the ingredient is adjustable
+                    if (ingredient.AdjustableStrength)
+                    {
+            //             adjustableIngredients.Add(ingredient);
+                        selectedDrink.Adjustable = true;
+                    }
+                }
+            }
+            return selectedDrink;
         }
         // public List<Drink> Drinks { get; set; }
     }

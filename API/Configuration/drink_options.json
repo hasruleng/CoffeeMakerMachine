@@ -30,7 +30,7 @@
           "HotWaterVolume": 150,
           "HotWaterTemp": 90,
           "HumanReadableStrength": 5,
-          "DefaultStrength": 5
+          "DefaultStrength": 2
         }
       ]
     },
@@ -43,7 +43,7 @@
           "HotWaterVolume": 2,
           "HotWaterTemp": 92,
           "AdjustableStrength": true,
-          "DefaultStrength": 30
+          "DefaultStrength": 3
         }
       ]
     },
@@ -67,7 +67,7 @@
           "HotWaterVolume": 3,
           "HotWaterTemp": 88,
           "AdjustableStrength": true,
-          "DefaultStrength": 25
+          "DefaultStrength": 2
         },
         {
           "Name": "Milk",

@@ -9,7 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IDrinkMachineService, DrinkMachineService>();
 builder.Services.AddScoped<IDrinksRepository, DrinksRepository>();
-
+// builder.Services.AddTransient<DrinkBuilder>();
+builder.Services.AddLogging(builder =>
+    {
+        builder.AddConsole(); // Or any other logging provider you prefer
+    });
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

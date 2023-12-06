@@ -5,7 +5,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Domain;
 
-namespace CoffeeDrinksBuilderApp.Builders
+namespace Persistence
 {
     public interface IDrinkOptionsLoader {
         public DrinksRepository LoadFrom(string Someparam);

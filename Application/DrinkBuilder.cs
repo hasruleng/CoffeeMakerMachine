@@ -1,12 +1,9 @@
 #pragma warning disable CS8618 // Non-nullable property is uninitialized. Consider declaring as nullable.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Domain;
+using Microsoft.Extensions.Logging;
 
-namespace CoffeeDrinksBuilderApp.Builders
+namespace Application
 {
     public interface IDrinkBuilder
     {
@@ -17,10 +14,13 @@ namespace CoffeeDrinksBuilderApp.Builders
 
     public class DrinkBuilder : IDrinkBuilder
     {
+        private readonly ILogger<DrinkMachineService> _logger;
+
         private Drink drink;
-        
-        public DrinkBuilder()
+
+        public DrinkBuilder(ILogger<DrinkMachineService> logger)
         {
+            _logger = logger;
             Reset();
         }
 
@@ -35,7 +35,8 @@ namespace CoffeeDrinksBuilderApp.Builders
             drink.Name = name;
         }
 
-        public void SetDrink(Drink drink){
+        public void SetDrink(Drink drink)
+        {
             this.drink = drink;
         }
 
@@ -60,9 +61,9 @@ namespace CoffeeDrinksBuilderApp.Builders
         {
             foreach (IngredientConfig ingredient in drink.Ingredients)
             {
-                Console.WriteLine($"Filling the cup with: {ingredient.Name}, Quantity: {ingredient.Quantity}, HotWaterVolume: {ingredient.HotWaterVolume}, HotWaterTemp: {ingredient.HotWaterTemp}");
+                _logger.LogInformation($"Filling the cup with: {ingredient.Name}, Quantity: {ingredient.Quantity}, HotWaterVolume: {ingredient.HotWaterVolume}, HotWaterTemp: {ingredient.HotWaterTemp}");
             }
-            Console.WriteLine("Please take your cup of "+drink.Name+". Thank you.");
+            _logger.LogInformation("Please take your cup of " + drink.Name + ". Thank you.");
         }
     }
 }
